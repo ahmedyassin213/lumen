@@ -1,0 +1,539 @@
+:root{
+    --fontOne:"Plus Jakarta Sans", sans-serif;
+    --fontTwo:"Cormorant Garamond", serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    padding: 10px 150px;
+    display: flex;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 1000;
+    justify-content: space-between;
+    color: black;
+    font-family: var(--fontOne);
+    align-items: center;
+    border-bottom: 1px solid black;
+    h1{
+        font-size: 24px;
+        letter-spacing: 1px;
+        span{
+            color: red;
+            font-size: 24px;
+        }
+    }
+    div{
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        gap: 30px;
+        a{
+            text-decoration: none;
+            color: black;
+            border: 3px solid transparent;
+            padding-bottom: 5px;
+            transition: 0.4s;
+        }
+        a:hover{
+            border-bottom: 3px solid red;
+            color: red;
+
+        }
+    }
+    button{
+        background-color: rgb(199, 4, 4);
+        color: white;
+        font-size: 16px;
+        height: fit-content;
+        padding: 10px 20px;
+        font-weight: 450;
+        border: 1px solid transparent;
+    }
+}
+.button1{
+     background-color: rgb(199, 4, 4);
+        color: white;
+        font-size: 16px;
+        height: fit-content;
+        padding: 10px 20px;
+        font-weight: 450;
+        border: 1px solid transparent;
+}
+.button2{
+     background-color: white;
+        color: black;
+        font-size: 16px;
+        height: fit-content;
+        padding: 10px 20px;
+        font-weight: 450;
+        border: 1px solid black;
+}
+.hero{
+    display: flex;
+    width: 80%;
+    gap: 200px;
+    padding: 80px 150px;
+    color: black;
+    .heroLeft{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 80%;
+         p{
+            margin: 0px;
+            color: black;
+            opacity: 0.8;
+            font-family: var(--fontOne);
+            font-size: 16px;
+        }
+        .copenhagen{
+            color: rgb(202, 53, 53);
+            font-family: var(--fontOne);
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+        h2{
+            margin: 0px;
+            font-family: var(--fontTwo);
+            font-size: 100px;
+            span{
+                color: rgb(105, 61, 136);
+               
+            }
+        }
+        .buttons{
+            display: flex;
+            gap: 40px;
+        }
+
+       
+    }
+    .heroRight{
+        position: relative;
+        .heroImg{
+            width: 600px;
+        }
+        .detailImg{
+            width: 300px;
+            position: absolute;
+            bottom: -10%;
+            left: -10%;
+            border: 1px solid white;
+        }
+    }
+}
+.quote{
+    background-color: rgb(235, 235, 242);
+    padding: 80px 150px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    font-family: var(--fontTwo);
+    span{
+        color:rgb(105, 61, 136) ;
+    }
+    p{
+        color: black;
+        text-align: center;
+    }
+    .end{
+        font-family: var(--fontOne);
+        letter-spacing: 1px;
+        color: black;
+        opacity: 0.8;
+        font-size: 14px;
+    }
+}
+.catalogue{
+    background-color: rgb(216, 236, 245);
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 80px 150px;
+    p{
+          color: rgb(202, 53, 53);
+            font-family: var(--fontOne);
+            letter-spacing: 1px;
+            font-size: 18px;
+    }
+    h2{
+        font-size: 70px;
+        margin: 30px 0px;
+        font-family: var(--fontTwo);
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100%;}
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            h3{
+                font-family: var(--fontTwo);
+                font-size: 30px;
+                font-weight: 300;
+            }
+            span{
+                 color: rgb(202, 53, 53);
+            font-family: var(--fontOne);
+            letter-spacing: 1px;
+            font-size: 18px;
+            }
+            .close{
+                font-family: var(--fontOne);
+                color: black;
+                opacity: 0.75;
+                letter-spacing: 1px;
+                font-size: 14px;
+
+            }
+        }
+    }
+.materials{
+     display: flex;
+     gap: 20px;
+    flex-direction: column;
+    color: black;
+    padding: 80px 150px;
+    p{
+          color: rgb(202, 53, 53);
+            font-family: var(--fontOne);
+            letter-spacing: 1px;
+            font-size: 18px;
+    }
+    h2{
+        font-size: 60px;
+        font-weight: 400;
+        margin: 30px 0px;
+        font-family: var(--fontTwo);
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1px;
+        background-color: gray;
+        border: 1px solid gray;
+        .cell{
+            display: flex;
+            flex-direction:column;
+            background-color: white;
+            box-sizing: border-box;
+            padding: 25px;
+            span{
+                color:rgb(105, 61, 136) ;
+                font-family: var(--fontTwo);
+                font-size: 20px;
+            }
+            h3{
+                color: black;
+                font-family: var(--fontOne);
+                font-size: 20px;
+            }
+            p{
+                font-family: var(--fontOne);
+                font-size: 15px;
+                color: black;
+                opacity: 0.8;
+            }
+
+        }
+    }
+}    
+.atelier{
+    display: flex;
+    gap: 100px;
+  padding: 80px 150px;
+  .atLeft{
+    width: 150%;
+    img{
+        width: 100%;
+    }
+  }
+    .atRight{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+    p{
+          color: rgb(202, 53, 53);
+            font-family: var(--fontOne);
+            letter-spacing: 1px;
+            font-size: 18px;
+    }
+    h2{
+        font-size: 60px;
+        font-weight: 400;
+        margin: 30px 0px;
+        font-family: var(--fontTwo);
+    }
+    .talk{
+        color: black;
+        opacity: 0.8;
+        font-size: 16px;
+        font-family: var(--fontOne);
+    }
+
+    }
+    border-bottom: 1px solid gray;
+}
+.lists{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 150px;
+    .col{
+         h2{
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-family: var(--fontOne);
+        span{
+            color: red;
+            font-size: 24px;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h3{
+        font-family: var(--fontOne);
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        list-style: none;
+        font-family: var(--fontOne);
+    }
+    }
+     border-bottom: 1px solid gray;
+}
+footer{
+    text-align: center;
+    font-family: var(--fontTwo);
+    color: black;
+    font-size: 18px;
+    padding: 20px;
+}
+@media (max-width: 1200px){
+    header{
+        padding: 10px 50px;
+    }
+    .hero{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 60px 50px;
+        gap: 80px;
+    }
+    .hero .heroLeft{
+        width: 55%;
+    }
+    .hero .heroLeft h2{
+        font-size: 72px;
+    }
+    .hero .heroRight{
+        width: 45%;
+    }
+    .hero .heroRight .heroImg{
+        width: 100%;
+    }
+    .hero .heroRight .detailImg{
+        width: 50%;
+    }
+    .quote{
+        padding: 60px 50px;
+        font-size: 40px;
+    }
+    .catalogue{
+        padding: 60px 50px;
+    }
+    .catalogue h2{
+        font-size: 56px;
+    }
+    .materials{
+        padding: 60px 50px;
+    }
+    .materials h2{
+        font-size: 48px;
+    }
+    .materials .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .atelier{
+        padding: 60px 50px;
+        gap: 50px;
+    }
+    .atelier .atRight h2{
+        font-size: 48px;
+    }
+    .lists{
+        padding: 60px 50px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 40px 80px;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+    header div{
+        flex-direction: column;
+        gap: 15px;
+    }
+    header ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .hero{
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 80px;
+    }
+    .hero .heroLeft{
+        width: 100%;
+        gap: 25px;
+    }
+    .hero .heroLeft h2{
+        font-size: 56px;
+    }
+    .hero .heroLeft .buttons{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .hero .heroRight{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .hero .heroRight .heroImg{
+        width: 100%;
+        display: block;
+    }
+    .hero .heroRight .detailImg{
+        width: 45%;
+        left: 0;
+        bottom: -12%;
+    }
+    .quote{
+        padding: 50px 20px;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    .quote p br{
+        display: none;
+    }
+    .quote .end{
+        font-size: 13px;
+        text-align: center;
+    }
+    .catalogue{
+        padding: 50px 20px;
+    }
+    .catalogue h2{
+        font-size: 42px;
+    }
+    .catalogue .cards{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .catalogue .card{
+        width: 100%;
+    }
+    .materials{
+        padding: 50px 20px;
+    }
+    .materials h2{
+        font-size: 38px;
+    }
+    .materials .grid .cell p br{
+        display: none;
+    }
+    .atelier{
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+    .atelier .atLeft{
+        width: 100%;
+    }
+    .atelier .atRight h2{
+        font-size: 38px;
+    }
+    .lists{
+        padding: 50px 20px;
+        gap: 30px 40px;
+    }
+    .lists .col{
+        width: calc(50% - 20px);
+        box-sizing: border-box;
+    }
+    .lists .col p br{
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    header h1{
+        font-size: 20px;
+    }
+    header button{
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+    .hero .heroLeft h2{
+        font-size: 44px;
+    }
+    .hero .heroLeft .buttons{
+        flex-direction: column;
+    }
+    .hero .heroLeft .buttons button{
+        width: 100%;
+    }
+    .quote{
+        font-size: 24px;
+    }
+    .catalogue h2{
+        font-size: 34px;
+    }
+    .materials h2{
+        font-size: 32px;
+    }
+    .materials .grid{
+        grid-template-columns: 1fr;
+    }
+    .atelier .atRight h2{
+        font-size: 32px;
+    }
+    .lists{
+        flex-direction: column;
+    }
+    .lists .col{
+        width: 100%;
+    }
+}
